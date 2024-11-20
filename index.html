@@ -1,1 +1,98 @@
-site en constuction 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Lou Herlin</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="logo-hl.png">
+  <!-- meta description -->
+  <meta name="description" content="Portfolio de Lou Herlin, designer graphique.">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <!-- https://jenseign.com/le-h1-logo/ -->    
+<h1><a href="index.html"> <img src="logo-hl.svg" 
+      alt="Lou Herlin"
+      width="60"
+      height="60"></a></h1>
+    
+
+    <nav class="header-nav">
+      <a href="about-me.html">About me 🐺</a>
+      <a href="contacts.html">Contacts 📞</a>
+    </nav>
+  </header>
+
+
+  <div class="projets">
+    <a href="collection.html" class="projet">
+      <img src="img/ok/collection/mosaîque-compo-collection.jpg" alt="poster">
+      <h2>Collection</h2>
+    </a>
+    <a href="surconso.html" class="projet">
+      <img src="img/ok/surconsomation/modif.jpg" alt="poster">
+      <h2>Surconsomation</h2>
+    </a>
+    <a href="specimen.html" class="projet">
+      <img src="img/ok/specimen/modif.jpg" alt="specimen">
+      <h2>Specimen Henry</h2> 
+    </a>
+  </a>
+  <a href="sieste.html" class="projet">
+    <img src="img/ok/sieste/1.jpg" alt="magazine sieste">
+    <h2>La sieste</h2>
+  </a>
+  <a href="ÉSAD at work.html" class="projet">
+    <img src="img/ok/ésad at work/modif.jpeg" alt="photos">
+    <h2> ÉSAD at work</h2>
+  </a>
+    <a href="coffret.html" class="projet">
+      <img src="img/ok/coffret/couvs-2.jpg" alt="Coffret">
+      <h2>Projet éditorial</h2>
+    </a>
+    <a href="indatable.html" class="projet">
+      <img src="img/ok/indatable/004-couleur.jpg" 
+      alt="train">
+      <h2> Indatable</h2>
+    </a>
+    <a href="before-after.html" class="projet">
+      <img src="img/ok/before-after/COUV-2.jpg" alt="couv">
+      <h2>2 Regards</h2>
+    </a>
+    <a href="sœurs.html" class="projet">
+      <img src="img/ok/couv livres/couv-soeurs.jpg" alt="soeurs">
+      <h2>Sœurs</h2>
+    </a>
+    <a href="lumieres.html" class="projet">
+      <img src="img/ok/lumières/couv.jpg" alt="Voyage">
+      <h2>Halo</h2> 
+    </a>
+    <a href="magazine.html" class="projet">
+      <img src="img/ok/magazine /vignette.jpg" alt="livres">
+      <h2>Flos</h2>
+    </a>
+    <a href="crime de l'orient express.html" class="projet">
+      <img src="img/ok/couv livres/couv-oe-2.jpg" alt="soeurs">
+      <h2> Le crime de l'Orient express</h2>
+    </a>
+   
+   
+
+  <script>
+    const projets = document.querySelectorAll('.projet');
+    projets.forEach(projet => {
+      projet.addEventListener('mouseover', () => {
+        projets.forEach(p => p.classList.add('unactive'));
+        projet.classList.remove('unactive');
+      });
+      projet.addEventListener('mouseout', () => {
+        projets.forEach(p => p.classList.remove('unactive'));
+      });
+    });
+  </script>
+</body>
+</html>
