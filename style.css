@@ -63,7 +63,7 @@ figure{
   text-decoration: none;
   font-family: "petit formal script", cursive;
   font-size: 20px;
-  font-size: clamp(16px, 2vw, 20px); /* pour que la taille de la police s'adapte à la largeur de l'écran */
+  font-size: clamp(17px, 2vw, 20px); /* pour que la taille de la police s'adapte à la largeur de l'écran */
   font-weight:700;
 }
 
@@ -157,7 +157,7 @@ figure{
 
 .projets{
   display: grid;
-  grid-template-columns: repeat(auto-fit, 400px); /* auto-fit pour que le nombre d'éléments s'adaptent à la largeur du conteneur 
+  grid-template-columns: repeat(auto-fit, 300px); /* auto-fit pour que le nombre d'éléments s'adaptent à la largeur du conteneur 
   320px -> 1 élément
   480px -> 2 éléments
   720px -> 3 éléments
@@ -256,6 +256,11 @@ img:hover {
 
 .page-projet{
   display: grid;
+  grid-template-columns: repeat(auto-fit, 300px); /* auto-fit pour que le nombre d'éléments s'adaptent à la largeur du conteneur 
+  320px -> 1 élément
+  480px -> 2 éléments
+  720px -> 3 éléments
+  */
   max-width: 100%;
   margin: 0 auto;
   background: #000000;
@@ -284,7 +289,7 @@ img:hover {
 .page-projet h2{
   font-family:'petit formal script', cursive;
   font-size : 50px;
-  font-size: clamp(30px, 2vw, 50px);
+  font-size: clamp(40px, 2vw, 50px);
   /*text-shadow: 
         -1px -1px 0 rgb(255, 255, 255),
          1px -1px 0 rgb(255, 255, 255),
