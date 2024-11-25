@@ -78,18 +78,18 @@ figure{
 
 .moi{
   display: grid;
-  grid-template-columns: repeat(auto-fit, 800px); /* auto-fit pour que le nombre d'éléments s'adaptent à la largeur du conteneur 
-  320px -> 1 élément
-  480px -> 2 éléments
-  720px -> 3 éléments
-  */
   max-width: 100%;
   margin: 0 auto;
+  grid-template-columns: 1fr;
   background: #000000;
   gap: 24px;
   justify-content: center;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
   margin-bottom: 24px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
   .moi h1{
@@ -257,8 +257,8 @@ img:hover {
   background: #000000;
   border: 2px solid #000000;
   grid-template-columns: 1fr 2fr;
-  gap: 24px;
-  padding: 24px;
+  gap: 4%;
+  padding: 5%;
   justify-content: center;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
   margin-bottom: 24px;
@@ -270,7 +270,6 @@ img:hover {
 
 /* Colonne fixe */
 .infos {
-  overflow-y:auto; /* Désactive le défilement pour cette colonne */
   padding: 10px;
   border-right: 1px solid #ddd; /* Ligne de séparation */
 }
@@ -281,7 +280,7 @@ img:hover {
 .page-projet h2{
   font-family:'petit formal script', cursive;
   font-size : 50px;
-  font-size: clamp(px, 2vw, 50px);
+  font-size: clamp(30px, 2vw, 50px);
   /*text-shadow: 
         -1px -1px 0 rgb(255, 255, 255),
          1px -1px 0 rgb(255, 255, 255),
@@ -298,7 +297,7 @@ img:hover {
   margin-top: 20px;
   font-family:'petit formal script', cursive;
   font-size: 30px ;
-  font-size: clamp(23px, 2vw, 30px);
+  font-size: clamp(22px, 2vw, 30px);
   font-weight: 700;
   margin-top: 50px;
 
@@ -317,7 +316,7 @@ img:hover {
 .page-projet p{
   font-family:sans-serif;
   font-size: 16px;
-  font-size: clamp(14px, 2vw, 16px);
+  font-size: clamp(13px, 2vw, 16px);
   font-weight: 700;
   color: #ffffff;
 }
@@ -325,7 +324,7 @@ img:hover {
 .page-projet ul{
   font-family:sans-serif;
   font-size: 16px;
-  font-size: clamp(14px, 2vw, 16px);
+  font-size: clamp(13px, 2vw, 16px);
   font-weight: 700;
   color: #ffffff;
 }
