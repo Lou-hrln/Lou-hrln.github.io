@@ -78,7 +78,7 @@ figure{
 
 .moi{
   display: grid;
-  grid-template-columns: repeat(auto-fit, 400px); /* auto-fit pour que le nombre d'éléments s'adaptent à la largeur du conteneur 
+  grid-template-columns: repeat(auto-fit, 800px); /* auto-fit pour que le nombre d'éléments s'adaptent à la largeur du conteneur 
   320px -> 1 élément
   480px -> 2 éléments
   720px -> 3 éléments
@@ -87,10 +87,6 @@ figure{
   margin: 0 auto;
   background: #000000;
   gap: 24px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 400px;
-  padding-right: 400px;
   justify-content: center;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
   margin-bottom: 24px;
