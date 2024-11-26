@@ -267,10 +267,9 @@ img:hover {
   border: 2px solid #000000;
   grid-template-columns: 1fr 2fr;
   gap: 4%;
-  padding: 5%;
+  padding: auto;
   justify-content: center;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  margin-bottom: 24px;
   img {
   border-radius: 5px; /* Arrondi des coins avec un rayon de 10 pixels */
    overflow: hidden; /* Évite que le conteneur entier ait un défilement */
