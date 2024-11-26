@@ -254,27 +254,54 @@ img:hover {
     }
 
 
+
+
+
+
+
+
 .page-projet{
-  display: grid;
+  /*display: grid;
   grid-template-columns: repeat(auto-fit, 300px); /* auto-fit pour que le nombre d'éléments s'adaptent à la largeur du conteneur 
   320px -> 1 élément
   480px -> 2 éléments
   720px -> 3 éléments
   */
-  max-width: 100%;
+  /*max-width: 100%;
   margin: 0 auto;
   background: #000000;
   border: 2px solid #000000;
   grid-template-columns: 1fr 2fr;
   gap: 4%;
-  padding: auto;
+  padding: 10px;
   justify-content: center;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
   img {
   border-radius: 5px; /* Arrondi des coins avec un rayon de 10 pixels */
-   overflow: hidden; /* Évite que le conteneur entier ait un défilement */
+   /*overflow: hidden; /* Évite que le conteneur entier ait un défilement */
+
+   display: grid;
+   grid-template-columns: 1fr 2fr; /* Par défaut, deux colonnes */
+   max-width: 100%;
+   margin: 0 auto;
+   background: #000000;
+   border: 2px solid #000000;
+   gap: 4%;
+   padding: 10px;
+   justify-content: center;
+   box-shadow: 0 0 8px rgba(0,0,0,0.1); 
+   img{
+   border-radius: 5px; 
+   overflow: hidden;}
 }
+
+@media screen and (max-width: 768px) { 
+  .page-projet {
+    grid-template-columns: 1fr; /* Une seule colonne */
+    gap: 10px; /* Ajuste l'espace entre les éléments */
+  }
 }
+
 
 /* Colonne fixe */
 .infos {
